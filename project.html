@@ -2,6 +2,12 @@
 <html lang="en">
 <head>
     <title>My school webpage</title>
+    <style>
+        h2, h1{
+            font-size: 50px;
+        }
+    </style>
+    <link rel = "stylesheet" href = "style.css">
 </head>
 <body>
 
@@ -32,9 +38,9 @@
         <figcaption>This is one of the buildings in the High School campus</figcaption>
     </figure>
     <footer>
-        <h2> Please sumbit the form below if you want to join this school</h2>
+        <h2 class = "fontclass"> Please sumbit the form below if you want to join this school</h2>
         <form>
-            <fieldset>
+            <fieldset class = "fontclass">
                 <legend>Registration Form</legend>
                 <label>Full name</label>
                 <input type = "text" id = "name" placeholder="Enter name"><br><br>
@@ -44,10 +50,10 @@
                 <input type="password" id="contact" ><br><br>
                 <label>Region of residence</label>
                 <select>
-                    <option>Stretton</option>
-                    <option>Drewvale</option>
-                    <option>Brown plains</option>
-                    <option>None of the above</option>
+                    <option id = "placeid">Stretton</option>
+                    <option id = "placeid">Drewvale</option>
+                    <option id = "placeid">Brown plains</option>
+                    <option id = "placeid">None of the above</option>
                 </select><br><br>
                 <label>Name of child</label>
                 <input type="text" id="child_name" placeholder="Enter child's name"><br><br>
@@ -74,8 +80,8 @@
                 <input type = "submit">
             </fieldset>
         </form>
-        <h2>Here is some extra details and links</h2>
-        <h3> Average class size information for each phase of schooling</h3>
+        <h2 class = "fontclass">Here is some extra details and links</h2>
+        <h3 > Average class size information for each phase of schooling</h3>
         <table border = "5" bgcolor = "white">
             <tr border = "3" bgcolor = "grey">
                 <th>Year level</th>
