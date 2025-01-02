@@ -17,3 +17,6 @@ mark{
     font-size: 30px;
     font-family:fantasy;
 }
+.textshadow{
+    text-shadow: 5px 5px 2px grey;
+}
