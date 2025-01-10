@@ -3,9 +3,12 @@
 
 <head>
     <title>My school webpage</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <style>
-        h2,
-        h1 {
+        h2,h1 {
             font-size: 50px;
         }
 
@@ -15,8 +18,7 @@
             box-shadow: 3px 3px 3px 4px rgb(0, 4, 255);
         }
 
-        main,
-        footer {
+        body {
             background-position: center;
             background-image: url("stretton_logo.png");
             background-size: cover;
@@ -24,9 +26,10 @@
             background-repeat: no-repeat;
         }
     </style>
-
-    <link rel="stylesheet" href="style.css">
 </head>
+
+    
+   
 
 <body>
 
@@ -91,7 +94,7 @@
         <h2 class="fontclass"> Please sumbit the form below if you want to join this school</h2>
         <form>
             <fieldset class="fontclass">
-                <legend>Registration Form</legend>
+                <legend style = "font-size: 40px;">Registration Form</legend>
                 <label>Full name</label>
                 <input type="text" id="name" placeholder="Enter name"><br><br>
                 <label>Email</label>
@@ -130,6 +133,9 @@
                 <input type="submit">
             </fieldset>
         </form>
+        <br>
+        <br>
+
         <h2 class="fontclass">Here is some extra details and links</h2>
         <h3> Average class size information for each phase of schooling</h3>
         <table border="5" bgcolor="white" >
@@ -166,10 +172,46 @@
         </table>
         <br>
         <br>
-    
+        
+        
     </footer>
-    <div style="position: sticky;bottom:0px;right:0px;float: right;">
-        <h3>Here is the school facebook <br>page for any further inquiries</h3>
+    <div>
+        <h3>Here is the school <br>facebook page<br> for any further <br>inquiries</h3>
+        <iframe src="https://www.facebook.com/strettonsc/"></iframe>
+    </div>
+    <br>
+    <br>
+    <br>
+    <div class = "container">
+        <div class = "row">
+            <div class = "col-md-7" style = "background-color: rgb(255, 75, 75);border: 3px solid black;left: 0px;">Was this information helpful
+                <br>
+                    
+                    <input type="radio" name = "feedback">Yes
+                    <br>
+                
+                    <input type="radio" name = "feedback">No
+                
+                
+            </div>
+            
+                <div class = "col-md-6" style = "background-color: rgb(122, 255, 122); border: 3px solid black;left: 0px;">
+                    Please write down some feedback on this website
+                    <input type = "text" placeholder="Feedback">
+                    
+                </div>
+                <br>
+                <div class="col-md-2" style="background-color: rgb(122, 133, 255); border: 3px solid black;">
+                    
+                    <input type="submit">
+                
+                </div>
+            
+        </div>
+    </div>
+    
+    <div style="position: sticky;bottom:10px;right:0px;float: right;opacity: 0.6;">
+        <h3>Here is the school <br>facebook page<br> for any further <br>inquiries</h3>
         <iframe src="https://www.facebook.com/strettonsc/"></iframe>
     </div>
 </body>
