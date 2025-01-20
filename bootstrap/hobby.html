@@ -31,18 +31,44 @@
         background-color: green;
         border: none;
     }
-
- 
+    .bar{
+        
+        text-shadow: 1px 2px 1px black;
+        box-shadow: 1px 0px 5px 1px black;
+    }
+    .bar1{
+        
+        text-shadow: 1px 2px 1px rgb(94, 94, 94);
+        box-shadow: 1px 0px 5px 1px rgb(0, 0, 0);
+    }
     </style>
 </head>
 <body>
-    <div class = "Box">
+    <div class = "Box ">
     <h1>My Hobbies</h1>
     <p>Hello down below are some of my hobbies</p>
-    <div class = "container-fluid bg-danger text-white">Reading 📖</div>
+    <div class = "container-fluid bg-danger text-white ">Reading 📖</div>
+    <h6>How much I like it:</h6><div class=" progress progress-bar btn btn-danger bar" style="width:10%;border: 2px solid black;">10%</div>
     <div class="container-fluid bg-warning text-white">Game Development 🎮</div>
+    <h6>How much I like it:</h6>
+    <div class=" progress progress-bar btn btn-warning bar1" style="width:40%;border: 2px solid black;">40%</div>
+
     <div class="container-fluid bg-info text-white">Math➕➖✖️➗</div>
+    <h6>How much I like it:</h6>
+    <div class=" progress progress-bar btn btn-info bar" style="width:25%;border: 2px solid black;">25%</div>
+
     <div class="container-fluid bg-success text-white">Robotics🤖</div>
+    <h6>How much I like it:</h6>
+    <div class=" progress progress-bar btn btn-success bar" style="width:25%;border: 2px solid black;">25%</div>
+    <br>
+    How much I like all my hobbies:
+    <div class = "progress">
+        
+        <div class="  progress-bar bg-success" style="width:25%;border: 2px solid black;">Robotics</div>
+        <div class="  progress-bar bg-info" style="width:25%;border: 2px solid black;">Math</div>
+        <div class="  progress-bar bg-warning" style="width:40%;border: 2px solid black;">Game Dev</div>
+        <div class="  progress-bar bg-danger " style="width:10%;border: 2px solid black;">Reading</div>
+    </div>
     </div>
     <br>
     <div class = "Box p-1">
@@ -54,6 +80,25 @@
     <div class="container-fluid bg-success text-white"><input type="text" class="bg4" placeholder = "Enter Hobby"></div>
     <input type = "submit">
     </div>
+    <div class="container">
+
+        <ul class="pagination" style="text-shadow: 2px 2px 3px rgb(125, 125, 125);">
+            <li class="page-item" style="box-shadow: 2px 2px 3px red;">
+                <a class="page-link btn btn-danger" href="#">Previous</a>
+            </li>
+            <li class="page-item" style="box-shadow: 2px 2px 3px orange;">
+                <a class="page-link btn btn-warning" href="#">1</a>
+            </li>
+            <li class="page-item" style="box-shadow: 2px 2px 3px green;">
+                <a class="page-link btn btn-success" href="#">2</a>
+            </li>
+            <li class="page-item" style="box-shadow: 2px 2px 3px rgb(0, 38, 255);">
+                <a class="page-link btn btn-primary" href="#">3</a>
+            </li>
+            <li class="page-item" style="box-shadow: 2px 2px 3px teal;">
+                <a class="page-link btn btn-info" href="#">Next</a>
+            </li>
+        </ul>
     </div>
 </body>
 </html>
